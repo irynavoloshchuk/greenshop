@@ -9,7 +9,7 @@ body {
 form {
     background: #FFFFFF;
     box-sizing: border-box;
-    padding: 52px 20px 40px;
+    padding: 50px 20px;
     border-bottom: 10px solid #46A358;
 }
 .form-container {
@@ -23,21 +23,22 @@ form {
     font-size: 20px;
     font-weight: 700;
     display: inline-block;
-    margin:  27px 20px;
+    margin:  36px 20px 0;
 }
 .title.login {
     color: #3D3D3D;
-    margin-right: 20;
+    margin-right: 20px;
 }
 
 .text-form {
     font-size: 13px;
     font-weight: 400;
     color: #3D3D3D;
-    margin-top: 40px;
+    margin-top: 36px;
 }
 .text-form.left-aligned {
     text-align: left;
+    margin-top: 40px;
 }
 
 input {
@@ -66,7 +67,7 @@ button {
 
 .register-button {
     background-color:#46A358;
-    padding-top: 18px;
+    margin-top: 41px;
     color: #FFFFFF;
     font-size: 16px;
 }
