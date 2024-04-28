@@ -30,15 +30,19 @@ form {
     margin-right: 20px;
 }
 
-.text-form {
+
+.text-form.left-aligned {
+    text-align: left;
     font-size: 13px;
     font-weight: 400;
     color: #3D3D3D;
-    margin-top: 36px;
-}
-.text-form.left-aligned {
-    text-align: left;
     margin-top: 40px;
+}
+.text-form.centered {
+    font-size: 13px;
+    font-weight: 400;
+    color: #3D3D3D;
+    margin: 36px 0 11px;
 }
 
 input {
