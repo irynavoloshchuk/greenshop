@@ -1,16 +1,149 @@
-body {
-    background: #707070;
-}
+@import url('reset.css');
+
+/* inline clock*/
 
 .container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	padding: 30px 0 12px;
+}
+
+.header-container {
+	font-size: 0;
+	border-bottom: 1px solid rgba(70, 163, 88, .1);
+}
+
+.header-logo,
+.header-list,
+.header-list li,
+.header-btn {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+}
+
+.header-logo {
+	width: 150px;
+}
+
+.header-list {
+	margin-top: 10px;
+	width: 950px;
+	text-align: center;
+}
+
+.header-list li {
+	padding-bottom: 18px;
+}
+
+.header-list li.active {
+	font-weight: 900;
+	border-bottom: 2px solid #46A358;
+}
+
+.header-list li+li {
+	margin-left: 50px;
+}
+
+.header-list li a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.header-btn {
+	width: 100px;
+	padding: 8px 17px 7px;
+	background: #46A358;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 6px;
+}
+
+.header-btn img {
+	vertical-align: middle;
+	margin-right: 1px;
+}
+
+.color-green {
+	color: #46A358;
+}
+
+.hero-section {
+    font-size: 0px;
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+}
+
+.hero-content {
+    font-size: 16px;
+    display: inline-block;
+    width: 693px;
+    padding: 68px 93px 44px 43px;
+}
+
+.hero-content h1 {
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.hero-content h2 {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.hero-content p {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.hero-image {
+    font-size: 16px;
+    display: inline-block;
+    width: 507px;
+    vertical-align: top; 
+}
+
+.hero-content h1,
+.hero-content h2, 
+.shop-button {
+    text-transform: uppercase;
+}
+
+.shop-button {
+    padding: 9px 25px;
+    background-color: #46A358;
+    text-decoration: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 44px;
+    border: 1px solid #EAEAEA;
+    display: inline-block;
+    cursor: pointer;
+
+
+}
+/* registration form */
+
+body {
+	color: #3D3D3D;
+}
+
+.re-container {
     width: 500px;
     margin: 0 auto;
+    
 }
 form {
     background: #FFFFFF;
     box-sizing: border-box;
     padding: 50px 20px;
+    outline: 1px solid #EAEAEA;
     border-bottom: 10px solid #46A358;
+    
 }
 .form-container {
     width: 300px;
@@ -19,15 +152,18 @@ form {
     
 }
 .title {
-    color: #46A358;
+    color:#46A358;
     font-size: 20px;
     font-weight: 700;
     display: inline-block;
-    margin:  36px 20px 0;
+    margin-top:  36px;
+  
+ 
 }
 .title.login {
-    color: #3D3D3D;
+    color:#3D3D3D;
     margin-right: 20px;
+    display: inline-block;
 }
 
 
@@ -62,7 +198,7 @@ button {
     width: 100%;
     border-radius: 5px;
     border: 1px solid #EAEAEA;
-    font-size: 13px;
+    font-size: 0px;
     color: #727272;
     background-color: #FFFFFF;
     cursor: pointer;
@@ -74,4 +210,15 @@ button {
     margin-top: 41px;
     color: #FFFFFF;
     font-size: 16px;
+}
+.google-fb-img {
+    margin-right: 9px;
+    vertical-align: bottom; 
+}
+
+.login-button {
+    color: #727272;
+    vertical-align: center;
+    display: inline-block;
+    font-size: 13px;
 }
