@@ -308,11 +308,13 @@ margin: 0 -18px;
   font-size: 15px;
   font-weight: 400;
   color: inherit;
+  padding-left: 12px;
 }
 
 .aside-list li {
-margin-top: 50px;
+margin-top: 40px;
 }
+
 
 
 
