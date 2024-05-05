@@ -1,6 +1,52 @@
 @import url('reset.css');
 
-/* inline clock*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Black.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/Montserrat-Light.woff2') format('woff2'),
+        url('../fonts/montserrat/Montserrat-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* inline block*/
 
 .container {
 	width: 1200px;
@@ -55,16 +101,18 @@
 
 .header-btn {
 	width: 100px;
-	padding: 8px 17px 7px;
+	padding: 7px 17px 7px 7px;
 	background: #46A358;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
 }
 
 .header-btn img {
-	vertical-align: middle;
-	margin-right: 1px;
+  margin-right: 4px;
 }
 
 .color-green {
@@ -72,153 +120,283 @@
 }
 
 .hero-section {
-    font-size: 0px;
-    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+  font-size: 0px;
+  background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
 }
 
 .hero-content {
-    font-size: 16px;
-    display: inline-block;
-    width: 693px;
-    padding: 68px 93px 44px 43px;
+  font-size: 16px;
+  display: inline-block;
+  width: 700px;
+  padding: 68px 10px 44px 43px;
 }
 
 .hero-content h1 {
-    font-size: 14px;
-    font-weight: 500;
+  padding-top: 7px;
+  font-size: 14px;
+  font-weight: 500;
 
 }
 .hero-content h2 {
-    font-size: 70px;
-    font-weight: 900;
+  font-size: 70px;
+  font-weight: 900;
 }
 
 .hero-content p {
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: none;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  padding-top: 5px;
 }
 
 .hero-image {
-    font-size: 16px;
-    display: inline-block;
-    width: 507px;
-    vertical-align: top; 
+  font-size: 16px;
+  display: inline-block;
+  width: 500px;
+  vertical-align: top; 
 }
 
 .hero-content h1,
 .hero-content h2, 
 .shop-button {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .shop-button {
-    padding: 9px 25px;
-    background-color: #46A358;
-    text-decoration: none;
-    font-size: 16px;
-    color: #FFFFFF;
-    border-radius: 5px;
-    margin-top: 44px;
-    border: 1px solid #EAEAEA;
-    display: inline-block;
-    cursor: pointer;
+  padding: 9px 25px;
+  background-color: #46A358;
+  text-decoration: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  margin-top: 44px;
+  border: 1px solid #EAEAEA;
+  display: inline-block;
+  cursor: pointer;
 
 
 }
 /* registration form */
 
 body {
-	color: #3D3D3D;
+  color: #3D3D3D;
+  font-family: 'Montserrat';
 }
 
 .re-container {
-    width: 500px;
-    margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
     
 }
 form {
-    background: #FFFFFF;
-    box-sizing: border-box;
-    padding: 50px 20px;
-    outline: 1px solid #EAEAEA;
-    border-bottom: 10px solid #46A358;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  padding: 50px 20px;
+  outline: 1px solid #EAEAEA;
+  border-bottom: 10px solid #46A358;
     
 }
 .form-container {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  font-family:'Montserrat';
     
 }
 .title {
-    color:#46A358;
-    font-size: 20px;
-    font-weight: 700;
-    display: inline-block;
-    margin-top:  36px;
-  
+  color:#46A358;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top:  36px;
+
  
 }
 .title.login {
-    color:#3D3D3D;
-    margin-right: 20px;
-    display: inline-block;
+  color:#3D3D3D;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
 }
 
 
 .text-form.left-aligned {
-    text-align: left;
-    font-size: 13px;
-    font-weight: 400;
-    color: #3D3D3D;
-    margin-top: 40px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3D3D3D;
+  margin-top: 40px;
 }
 .text-form.centered {
-    font-size: 13px;
-    font-weight: 400;
-    color: #3D3D3D;
-    margin: 36px 0 11px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #3D3D3D;
+  margin: 36px 0 11px;
 }
 
 input {
-    padding: 12px 14px;
-    margin-top: 16px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #EAEAEA;
-    box-sizing: border-box;
-    font-size: 14px;
-    color:#A5A5A5;
+padding: 12px 14px;
+margin-top: 16px;
+width: 100%;
+border-radius: 5px;
+border: 1px solid #EAEAEA;
+font-size: 14px;
+font-weight: 500;
+color:#A5A5A5;
     
 }
 button {
-    padding: 12px 14px;
-    margin-top: 16px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #EAEAEA;
-    font-size: 0px;
-    color: #727272;
-    background-color: #FFFFFF;
-    cursor: pointer;
+padding: 12px 14px;
+margin-top: 16px;
+width: 100%;
+border-radius: 5px;
+border: 1px solid #EAEAEA;
+font-size: 0px;
+color: #727272;
+background-color: #FFFFFF;
+cursor: pointer;
     
 }
 
 .register-button {
-    background-color:#46A358;
-    margin-top: 41px;
-    color: #FFFFFF;
-    font-size: 16px;
+background-color:#46A358;
+margin-top: 41px;
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 700;
 }
 .google-fb-img {
-    margin-right: 9px;
-    vertical-align: bottom; 
+margin-right: 9px;
+vertical-align: bottom; 
 }
 
 .login-button {
-    color: #727272;
-    vertical-align: center;
-    display: inline-block;
-    font-size: 13px;
+color: #727272;
+vertical-align: center;
+display: inline-block;
+font-family: 'Montserrat';
+font-size: 13px;
+font-weight: 500;
+}
+
+/* ASIDE AND MAIN  */
+
+.aside {
+background: #FBFBFB;
+width: 310px;
+float: left;
+padding: 26px 18px 0;
+  
+}
+
+.aside-list {
+	min-height: 774px;
+}
+
+.aside h3 {
+font-weight: 700;
+cursor: pointer;
+}
+
+.aside-img {
+margin: 0 -18px;
+}
+
+.aside-list li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: inherit;
+}
+
+.aside-list li {
+margin-top: 50px;
+}
+
+
+
+.main {
+width: 840px;
+float: right;
+}
+
+.products {
+  padding-top: 26px;
+}
+
+
+.products-sort-list li a{
+  padding-right: 37px;
+  float: left;
+}
+
+.products-filter {
+  float: right;
+  font-size: 15px;
+   
+}
+
+.products-sort-list li a, .products-filter a{
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+}
+
+.products-cards {
+	margin: 0 -15px;
+  padding-top: 31px;
+}
+
+.products-card {
+  width: 33.333%;
+  float: left;
+  padding: 2px 15px 70px;
+}
+
+.product-title {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+}
+
+.product-price {
+  color: #46A358;
+  font-weight: 700;
+  padding-top: 6px;
+}
+
+.products-card img {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	margin: 0 0 20px;
+}
+
+.mr-30 {
+	margin-right: 30px;
+}
+
+
+
+.pagination-list li a {
+  text-decoration: none;
+  color: inherit;
+     
+
+}
+.pagination-list li {
+  border: 1px solid #E5E5E5;
+  padding: 9px 12px;
+  border-radius: 4px;
+  float: right;
+  margin-left: 10px;
+  
+   
+}
+.pagination-list li.active {
+  background-color: #46A358; 
+  color: #fff;
+  padding: 9px 14px;
+  
 }
