@@ -15,7 +15,7 @@
         url('../fonts/montserrat/Montserrat-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
+    font-display: swap; 
 }
 
 @font-face {
@@ -415,8 +415,7 @@ float: right;
 
 .featured-blogposts {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 28px;
+  gap: 28px;
   
   justify-content: space-between; 
   
@@ -425,8 +424,7 @@ float: right;
 
 
 .featured-blogpost {
-  width: calc(50% - 14px);
-  height: 302px;
+  width: 50%;
   display: flex;
   /* border: #46A358 solid 1px; */
   background-color:#FBFBFB; 
@@ -441,7 +439,7 @@ float: right;
 .banner-content {
   display: flex;
   flex-flow: column;
-  margin: 30px 30px 30px 40px;
+  padding: 30px 30px 40px;
   column-gap: 9px;
   text-align: right;
   justify-content: flex-start;
@@ -486,14 +484,14 @@ float: right;
 
 
 .featured-blogpost img{
-  width: 268px;
-  height: 100%;
+  width: 100%;
+  height: 292px;
   object-fit: cover;
 }
 
 
 .blogpost .publication-date {
-  font-weight: 500;
+  font-weight: 500;  
   padding: 4px 0;
 }
 
@@ -532,9 +530,8 @@ float: right;
 
 
 .blogpost {
-  width: calc(25% - 30px);
-  min-height: 362px;
-  margin: 0 15px;
+  width: 25%;
+  padding: 0 15px;
 }
 
 
