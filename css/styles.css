@@ -589,11 +589,23 @@ float: right;
 
  /* Lesson position */
 
+ .main-products {
+  width: 840px;
+  margin: 0 auto;
+  margin-right: 0;
+  display: flex;
+  flex-flow:column;
+
+
+
+ }
+
 
   .products-sort-position {
     display: flex;
     justify-content:space-between;
     align-items: center;
+    padding-bottom: 7px;
    
   }
  
@@ -608,39 +620,34 @@ float: right;
 
 
 
- .products-sort-list-position a {
-  padding: 0 20px;
+ .products-sort-list-position li a {
   text-decoration: none;
   color: inherit;
-  border-bottom: 2px solid transparent;
-  
-  
-
- }
-
-.products-sort-list-position li a {
-  text-decoration: none;
-  color: inherit;
+  transition: color 0.3s ease, font-weight 0.3s ease;
   font-size: 15px;
-  border-bottom: 2px solid transparent;
-  padding: 0 0 2px;
-  transition: border-color 0.3s ease, font-weight 0.3s ease;}
+  border: 2px solid transparent ;
+ 
+
+}
+  
+
 
   .products-filter-position a, p{
     text-decoration: none;
     color: inherit;
     font-size: 15px;
 
-  
-  
  }
 
 .products-sort-list-position li a:hover {
   color: #46A358;
   font-weight: 700;
-  border-bottom-color: #46A358;
+  border-bottom-color: 2px solid rgba(70, 163, 88, 1);
+
+
   
  }
+
 
  .products-cards-position {
   display: flex;
@@ -654,7 +661,7 @@ float: right;
  }
 
  .products-card-position {
-  flex: 1 1 300px;
+  flex: 1 ;
   position: relative;
   
   
@@ -691,6 +698,10 @@ float: right;
  
 }
 
+.card-img {
+  position: relative;
+}
+
 .card-description{
 	padding: 20px;
 }
@@ -713,7 +724,7 @@ float: right;
 	bottom: 0;
 	margin-left: -60px;
 	left: 50%;
-  background: rgba(255, 255, 255, 0.8); 
+  /* background: rgba(255, 255, 255, 0.8);  */
   padding: 8px 6px;
   transition: opacity 0.3s ease;
 	opacity: 0;
@@ -722,12 +733,13 @@ float: right;
 }
 
 .card-actions img {
-	width: 20px;
-	height: 20px;
+	width: 100%;
+	height: 100%;
 }
 
 .card-img:hover .card-actions {
 	opacity: 1;
+  background: transparent;
 }
 
 span.card-off {
