@@ -135,8 +135,9 @@ font-weight: 700;
 .header-submenu-list  {
   position: absolute;
   top: 0;
-  left: -160%;
+  left: -155%;
   display: none;
+
 
  
 }
