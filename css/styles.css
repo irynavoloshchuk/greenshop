@@ -75,8 +75,8 @@
   position: relative;
 }
 
-.header-list > .header-item > a.active::before, 
-.header-list > .header-item > a:hover::before{
+.header-list > .header-item.active > a::before, 
+.header-list > .header-item:hover > a::before{
   position: absolute;
   content: '';
   bottom: -22px;
@@ -87,8 +87,8 @@
 
 }
 
-.header-list > .header-item a:hover,
-.header-list > .header-item a.active:hover {
+.header-list > .header-item:hover,
+.header-list > .header-item .active:hover {
 color: rgba(70, 163, 88, 1);
 font-weight: 700;
   
@@ -125,7 +125,7 @@ font-weight: 700;
  .header-submenu {
   position: absolute;
   top: 100%;
-  right: -30%;
+  left: 0;
   padding: 37px 0 0;
   text-align: center;
   display: none;
@@ -135,8 +135,9 @@ font-weight: 700;
 .header-submenu-list  {
   position: absolute;
   top: 0;
-  left: -160%;
+  right: 100%;
   display: none;
+  padding-right: 5px;
 
 
  
@@ -150,6 +151,7 @@ font-weight: 700;
 {
 	display: block;
 
+
 }
 
 
@@ -158,9 +160,10 @@ font-weight: 700;
  .header-submenu-list > .submenu-list-item a {
    background: rgba(237, 246, 238, 1);
    color: rgba(61, 61, 61, 1);
-   padding: 10px 14px;
+   padding: 10px 36px;
    font-weight: 400;
    display: block;
+   white-space: nowrap;
  
  }
 
@@ -174,9 +177,14 @@ font-weight: 700;
  }
  
 
+
+ .header-submenu >.submenu-item,
  .header-submenu-list .submenu-list-item  {
  text-align: left;
+
  }
+
+
 
 .hero-section {
   display: flex;
