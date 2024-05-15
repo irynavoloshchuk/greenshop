@@ -135,7 +135,7 @@ font-weight: 700;
 .header-submenu-list  {
   position: absolute;
   top: 0;
-  left: -155%;
+  left: -160%;
   display: none;
 
 
@@ -158,7 +158,7 @@ font-weight: 700;
  .header-submenu-list > .submenu-list-item a {
    background: rgba(237, 246, 238, 1);
    color: rgba(61, 61, 61, 1);
-   padding: 7px 14px;
+   padding: 10px 14px;
    font-weight: 400;
    display: block;
  
@@ -170,6 +170,7 @@ font-weight: 700;
   background: rgba(26, 113, 42, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
+  transition: 0.3s ease;
  }
  
 
