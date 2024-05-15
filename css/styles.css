@@ -65,19 +65,18 @@
   align-items: center;
 }
 
-
 .header-list {
 	display: flex;
 	font-size: 16px;
   gap: 50px;
 }
 
-.header-list .header-item a {
+.header-list > .header-item > a {
   position: relative;
 }
 
-.header-list > .header-item a.active::before, 
-.header-list > .header-item a:hover::before{
+.header-list > .header-item > a.active::before, 
+.header-list > .header-item > a:hover::before{
   position: absolute;
   content: '';
   bottom: -22px;
@@ -86,11 +85,7 @@
   height: 3px;
   background:#46A358;
 
-
-  
-
 }
-
 
 .header-list > .header-item a:hover,
 .header-list > .header-item a.active:hover {
@@ -99,8 +94,6 @@ font-weight: 700;
   
   
 } 
-
-
 
 .header-list li a {
 	color: inherit;
@@ -120,8 +113,6 @@ font-weight: 700;
     font-size: 16px;
     line-height: 20.11px;
     text-align: left;
-
-
   
 }
  
@@ -134,47 +125,54 @@ font-weight: 700;
  .header-submenu {
   position: absolute;
   top: 100%;
-  right: 0;
+  right: -30%;
   padding: 37px 0 0;
+  text-align: center;
+  display: none;
   
-  
-
 }
-
-
 
 .header-submenu-list  {
   position: absolute;
   top: 0;
   left: -160%;
+  display: none;
 
  
 }
+.submenu-item {
+  position: relative;
+}
 
+.header-list > .header-item:hover > .header-submenu,
+.header-submenu > .submenu-item:hover > .header-submenu-list
+{
+	display: block;
+
+}
 
 
  
- .header-submenu > .header-item a,
- .header-submenu-list > .header-item a {
+ .header-submenu > .submenu-item a,
+ .header-submenu-list > .submenu-list-item a {
    background: rgba(237, 246, 238, 1);
    color: rgba(61, 61, 61, 1);
    padding: 7px 14px;
    font-weight: 400;
    display: block;
-   
- }
  
- .header-submenu > .header-item a:hover,
- .header-submenu-list > .header-item a:hover {
-  background: rgba(26, 113, 42, 1);
-   color: rgba(255, 255, 255, 1);
-   font-weight: 700;
-   
-  
-   
  }
 
- .header-submenu-list .header-item a {
+ .header-submenu >.submenu-item a:hover,
+ .header-submenu-list >.submenu-list-item a:hover {
+  display: block;
+  background: rgba(26, 113, 42, 1);
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+ }
+ 
+
+ .header-submenu-list .submenu-list-item  {
  text-align: left;
  }
 
@@ -203,8 +201,6 @@ font-weight: 700;
   padding-top: 7px;
 
 }
-
-
 
 .hero-content p {
   font-size: 14px;
