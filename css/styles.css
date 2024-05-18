@@ -927,16 +927,64 @@ p.newsletter-content {
 
 .locations {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   gap: 60px;
-  
+  background: rgba(70, 163, 88, 0.1);
+  padding: 27px 23px;
+  background-image: url('../icons/logo-footer.svg');
+  background-repeat: no-repeat;
+  background-position: 25px 30px;
+
 }
+
+
 
 .locations > .address {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  
+
 }
 
+.locations > .location-item >.address{
+  background: url(../icons/Location.svg) no-repeat;
+  background-position: 0 50%;
+  padding-left: 30px;
+  line-height: 22px;
+
+}
+
+.locations > .location-item +.email {
+  background: url(../icons/Message.svg) no-repeat;
+  padding-left: 30px;
+  background-position: 0 50%;
+
+}
+
+.locations > .location-item +.phone {
+  background: url(../icons/Calling.svg) no-repeat;
+  padding-left: 30px;
+  background-position: 0 50%;
+
+}
+
+.footer-menu {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 150px;
+  padding: 32px 33px;
+}
+
+.footer-menu > ul > li a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 
+  ;
+}
 
 
 
