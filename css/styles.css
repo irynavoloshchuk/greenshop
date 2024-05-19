@@ -940,7 +940,7 @@ padding-top: 12px;
 }
 
 
-p.newsletter-content, .service-item-text p, .locations >.location-item p{
+p.newsletter-content, .service-item-text p, .locations >.location-item p {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -1023,9 +1023,14 @@ p.newsletter-content {
   justify-content: flex-start;
   gap: 150px;
   padding: 32px 33px;
+  background: rgba(251, 251, 251, 1);
+  border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+  ;
+  
+  
 }
 
-.footer-menu > .footer-list >ul > li a {
+.footer-menu > .footer-list >ul > li a, .copyright p {
   text-decoration: none;
   color: rgba(61, 61, 61, 1);
   font-weight: 400;
@@ -1085,6 +1090,13 @@ p.newsletter-content {
   background: url(../images/payments.svg)no-repeat;
   padding: 0 0 40px 0;
   background-position: 0 100%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 22px;
+
 }
 
 
