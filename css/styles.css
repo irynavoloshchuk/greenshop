@@ -69,11 +69,38 @@
 	display: flex;
 	font-size: 16px;
   gap: 50px;
+  position: relative;
 }
+
+
 
 .header-list > .header-item > a {
   position: relative;
+  
 }
+
+.header-list > .header-item:not(.submenu-item):first-child > a {
+  background: url(../icons/Facebook.svg) no-repeat;
+  background-size: 20px;
+  background-position: left center;
+  padding: 0px 0 0 26px;
+}
+
+.header-list > .header-item:not(.submenu-item):nth-child(2) > a {
+  background: url(../icons/Instagram.svg) no-repeat;
+  background-position: left center ;
+  background-size: 20px;
+  padding: 0px 0 0 26px;
+}
+.header-list > .header-item:not(.submenu-item):nth-child(3) > a{
+  background: url(../icons/Twitter.svg) no-repeat;
+  background-size: 20px;
+  padding: 0px 26px 0 0px;
+  background-position: right center;
+ 
+}
+
+
 
 .header-list > .header-item.active > a::before, 
 .header-list > .header-item:hover > a::before{
@@ -168,20 +195,33 @@ font-weight: 700;
    font-weight: 400;
    display: block;
    white-space: nowrap;
+   position: relative;
  
  }
 
  .header-submenu >.submenu-item a:hover,
  .header-submenu-list >.submenu-list-item a:hover {
-  background: rgba(26, 113, 42, 1) url(../icons/arrow.svg) no-repeat 90% 50%/ 6px 10px;
+  background: rgba(26, 113, 42, 1) ;
   
   color: rgba(255, 255, 255, 1);
   font-weight: 700;
   transition: 0.3s ease;
-  
-
+  padding-right: 36px;
 
  }
+ .header-submenu > .submenu-item:hover > a::after,
+ .header-submenu-list > .submenu-list-item:hover > a::after {
+  content: '';
+  position: absolute;
+  background: url('../icons/arrow.svg') no-repeat;
+  background-size: 6px 10px;
+  width: 6px;
+  height: 10px;
+  top: calc(50% - 5px); 
+  right: 10px; 
+  
+ }
+
  
 
 
@@ -909,7 +949,7 @@ span.card-off {
   
 }
 
-form > .newsletter-input {
+ .form-newsletter > input {
   min-width: 354px;
   font-weight: 400;
   border-radius: 6px 0px 0px 0px;
@@ -975,6 +1015,11 @@ p.newsletter-content {
 .locations >.location-item p{
   color: rgba(61, 61, 61, 1);
 
+}
+
+.locations >.location-item p > a {
+  text-decoration: none;
+  color: rgba(61, 61, 61, 1);
 }
 
 .logo a {
@@ -1060,7 +1105,7 @@ p.newsletter-content {
 
 .social-links-list > .social-icon a {
   display: block;
-  background: url(../icons/Facebook.svg) no-repeat;
+  background: url(../icons/Facebook.svg) no-repeat 30px;
   padding: 60px 40px 0px 0;
   background-position:0 20px; 
 
@@ -1068,26 +1113,26 @@ p.newsletter-content {
 
 .social-links-list > .social-icon + .social-icon a {
   display: block;
-  background: url(../icons/Instagram.svg)no-repeat;
+  background: url(../icons/Instagram.svg)no-repeat 30px;
   background-position:0 20px; 
 }
 
 .social-links-list > .social-icon + .social-icon+.social-icon a {
   display: block;
-  background: url(../icons/Twitter.svg) no-repeat;
+  background: url(../icons/Twitter.svg) no-repeat 30px;
   background-position:0 20px; 
 }
 .social-links-list > .social-icon + .social-icon+.social-icon +.social-icon a {
-  background: url(../icons/Linkedin.svg)no-repeat;
+  background: url(../icons/Linkedin.svg)no-repeat 30px;
   background-position:0 20px; 
 }
   .social-links-list > .social-icon + .social-icon+.social-icon +.social-icon+.social-icon a {
 
-  background:url(../icons/Youtube.svg) no-repeat;
+  background:url(../icons/Youtube.svg) no-repeat 30px;
   background-position:0 20px; 
  }
 .payments > h3 {
-  background: url(../images/payments.svg)no-repeat;
+  background: url(../images/payments.svg)no-repeat 224px;
   padding: 0 0 40px 0;
   background-position: 0 100%;
 }
