@@ -547,7 +547,6 @@ float: right;
 .featured-blogpost {
   width: 50%;
   display: flex;
-  /* border: #46A358 solid 1px; */
   background-color:#FBFBFB; 
  
  
@@ -1131,9 +1130,11 @@ p.newsletter-content {
   background:url(../icons/Youtube.svg) no-repeat 30px;
   background-position:0 20px; 
  }
-.payments > h3 {
-  background: url(../images/payments.svg)no-repeat 224px;
-  padding: 0 0 40px 0;
+.payments{
+  background: url(../images/payments.svg)no-repeat;
+  width: 224px;
+  height: 26px;
+  padding: 30px 20px 60px 0;
   background-position: 0 100%;
 }
 
