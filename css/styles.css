@@ -131,7 +131,7 @@ font-weight: 700;
 
 .header-btn a {
 
-    padding: 8px 18px 8px ;
+    padding: 8px 18px;
     background: #46A358;
     color: #fff;
     text-decoration: none;
@@ -142,16 +142,15 @@ font-weight: 700;
     text-align: left;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 4px;
   
 }
 .header-btn .logout {
   width: 20px;
   height: 20px;
-  stroke: white;
-  stroke-width:1.5px;
-  stroke-linecap:round;
-  stroke-linejoin:round;
+  fill: #EAEAEA;
+  /* padding-right: 4px; */
+
 
 }
 
@@ -869,16 +868,25 @@ float: right;
 
 }
 
-.card-actions svg {
+.card-actions .shopping-cart {
 	width: 20px;
 	height: 20px;
-  fill: white;
-
+  fill: rgba(70, 163, 88, 1);
+  
 }
- .heart {
-  fill: #52C368;
+
+.card-actions .search {
+	width: 20px;
+	height: 20px;
+  fill:rgba(61, 61, 61, 1);;
+  
+}
+
+
+  .card-actions .heart {
+  fill:rgba(61, 61, 61, 1);
   width: 20px;
-  height: 20px;
+  height: 18px;
 }
 
 .card-img:hover .card-actions  {
@@ -1040,6 +1048,7 @@ p.newsletter-content {
 .locations >.location-item p > a {
   text-decoration: none;
   color: rgba(61, 61, 61, 1);
+  display: block;
 }
 
 .logo a {
@@ -1053,12 +1062,20 @@ p.newsletter-content {
 
 .locations > .address {
   display: flex;
-  flex-wrap: wrap;
-  
+  justify-content: center;
+  flex-direction: row;
+ 
 
 }
 
-.locations > .location-item >.address{
+.location-item svg {
+  width: 20px;
+  height: 20px;
+
+
+}
+
+/* .locations > .location-item >.address{
   background: url(../icons/Location.svg) no-repeat;
   background-position: 0 50%;
   padding-left: 30px;
@@ -1078,7 +1095,7 @@ p.newsletter-content {
   padding-left: 30px;
   background-position: 0 50%;
 
-}
+} */
 
 .footer-menu > .footer-list, h3 {
   padding-bottom: 10px;
@@ -1117,13 +1134,23 @@ p.newsletter-content {
 .social-links-list{
   display: flex;
   flex-direction: row;
+  gap: 10px;
+  padding-top: 10px;
 
+  }
+
+  .social-links-list svg {
+    width: 31px;
+    height: 31px;
+    fill:rgba(70, 163, 88, 0.6);
+    border: 1px solid rgba(70, 163, 88, 0.2);
+    border-radius: 4px;
+    
   }
 
 
 
-
-.social-links-list > .social-icon a {
+/* .social-links-list > .social-icon a {
   display: block;
   background: url(../icons/Facebook.svg) no-repeat 30px;
   padding: 60px 40px 0px 0;
@@ -1150,7 +1177,7 @@ p.newsletter-content {
 
   background:url(../icons/Youtube.svg) no-repeat 30px;
   background-position:0 20px; 
- }
+ } */
 .payments{
   background: url(../images/payments.svg)no-repeat;
   width: 224px;
