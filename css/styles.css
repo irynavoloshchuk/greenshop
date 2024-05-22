@@ -142,6 +142,10 @@ font-weight: 700;
     text-align: left;
   
 }
+.header-btn .logout {
+  width: 20px;
+  height: 20px;
+}
  
 .header-item {
   position: relative; 
@@ -222,15 +226,18 @@ font-weight: 700;
   
  } */
 
+ .arrow-link {
+  display: block;
+ }
+
  .arrow-link svg {
   width: 7px; 
   height: 10px; 
-
-  fill: #E5E5E5; 
+  fill: red; 
 }
 
 .arrow-link:hover svg {
-  fill: #E5E5E5; 
+  fill: red; 
 
 }
 
