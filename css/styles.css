@@ -129,9 +129,9 @@ font-weight: 700;
 
 
 
-.header-btn {
+.header-btn a {
 
-    padding: 8px 18px 8px;
+    padding: 8px 18px 8px ;
     background: #46A358;
     color: #fff;
     text-decoration: none;
@@ -140,12 +140,22 @@ font-weight: 700;
     font-size: 16px;
     line-height: 20.11px;
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   
 }
 .header-btn .logout {
   width: 20px;
   height: 20px;
+  stroke: white;
+  stroke-width:1.5px;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+
 }
+
+
  
 .header-item {
   position: relative; 
@@ -160,7 +170,7 @@ font-weight: 700;
   padding: 37px 0 0;
   text-align: center;
   display: none;
-  opacity: 1;
+
   z-index: 1;
   
 }
@@ -169,10 +179,10 @@ font-weight: 700;
   position: absolute;
 
   right: 100%;
-  top: 80%;
+  top: 0%;
   display: none;
   padding-right: 5px;
-  opacity: 1;
+
 
 
 
@@ -182,16 +192,14 @@ font-weight: 700;
   position: relative;
 }
 
-.header-list > .header-item:hover > .header-submenu,
-.header-submenu > .submenu-item:hover > .header-submenu-list
-{
-	display: block;
 
-
+.header-list > .header-item:hover > .header-submenu {
+  display: block;
+}
+.submenu-item:hover > .header-submenu-list {
+  display: block;
 }
 
-
- 
  .header-submenu > .submenu-item a,
  .header-submenu-list > .submenu-list-item a {
    background: rgba(237, 246, 238, 1);
@@ -204,8 +212,8 @@ font-weight: 700;
  
  }
 
- .header-submenu >.submenu-item a:hover,
- .header-submenu-list >.submenu-list-item a:hover {
+ .header-submenu > .submenu-item a:hover,
+ .header-submenu-list > .submenu-list-item a:hover {
   background: rgba(26, 113, 42, 1);
   
   color: rgba(255, 255, 255, 1);
@@ -214,26 +222,15 @@ font-weight: 700;
   padding-right: 36px;}
 
 
- 
- .header-submenu > .submenu-item:hover > a::after,
- .header-submenu-list > .submenu-list-item:hover > a::after {
-  content: '';
-  position: absolute;
-  
-
- 
-  
- }
-
-
 
  .arrow-link svg {
   width: 7px; 
   height: 10px; 
   fill:rgba(255, 255, 255, 1);
   position: relative;
-  align-items: calc(50% - 5px);
-  right:100%; 
+  right: 100%;
+  
+ 
 }
 
 .arrow-link:hover svg {
@@ -872,12 +869,19 @@ float: right;
 
 }
 
-.card-actions img {
-	width: 100%;
-	height: 100%;
+.card-actions svg {
+	width: 20px;
+	height: 20px;
+  fill: white;
+
+}
+ .heart {
+  fill: #52C368;
+  width: 20px;
+  height: 20px;
 }
 
-.card-img:hover .card-actions {
+.card-img:hover .card-actions  {
 	opacity: 1;
   background: transparent;
 }
