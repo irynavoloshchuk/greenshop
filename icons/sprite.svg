@@ -6,9 +6,12 @@
 </symbol>
 
 <!-- arrow down -->
+
+
 <symbol viewBox="0 0 16 16" fill="none" id="arrow-down">
 <path d="M12.6666 5.66675L7.99992 10.3334L3.33325 5.66675" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+
 <!-- header-button -->
 <symbol viewBox="0 0 20 20" fill="none"  id="logout">
 <path d="M18.1601 10.1006H8.12598" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

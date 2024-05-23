@@ -884,12 +884,12 @@ float: right;
   .arrow-down svg {
   width: 16px;
   height: 16px;
-  fill: none;
-}
+  }
 
-.products-filter-position a:hover .arrow-down svg {
-  fill: rgba(70, 163, 88, 1);
-}
+
+
+
+
 
 .products-sort-list-position li a:hover {
   color: #46A358;
