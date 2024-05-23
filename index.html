@@ -13,6 +13,7 @@
          <a class="header-logo" href="#">
         <img class="header-image" src="images/Logo.svg" alt="Greenshop" width="150" height="34">
          </a>
+         <div>
           <ul class="header-list">
             <li class="active header-item"><a href="#">Home</a></li>
             <li class="header-item"><a href="pages/shop.html">Shop</a></li>
@@ -40,18 +41,36 @@
           </li>
             <li><a href="#">Blogs</a></li>
           </ul>
+        </div>
+     
+    <ul class="header-icons">
+      <li>
+        <a href="#"><svg class="cart-new">
+            <use href="icons/sprite.svg#shopping-cart-new"></use>
+        </svg></a>
+    </li>
+    <li>
+      <a href="#"><svg class="search">
+        <use href="icons/sprite.svg#search"></use>
+      </svg>
+    </a>
+  </li>
+    </ul>
+   
+    
+
        <div class="header-btn">
           <a href="pages/registration.html" class="logout-link">
           <!-- <img src="images/logout.svg" alt="Logout" width="20" height="20">
           <span>Login</span> -->
         
-<svg class="logout">
+<div><svg class="logout">
             <use href="icons/sprite.svg#logout"></use>
-            </svg>
+            </svg></div>
             Login
         </a>
       </div>
-   
+    </div>
    </header>
     <section class="container">
       <div class="hero-section">
@@ -61,8 +80,8 @@
           <p>We are an online plant shop offering a wide range of cheap and trendy plants.
             Use our plants to create an unique Urban Jungle.
             Order your favorite plants!</p>
-            <div>
-              <a class="shop-button" href="pages/shop.html">Shop Now</a>
+            <div class="shop-button">
+              <a class="shop-button-link" href="pages/shop.html">Shop Now</a>
             </div>
           </div>
           <div class="hero-image"><img  src="images/flower.png" alt="Flowers" width="507" height="450">
@@ -92,7 +111,14 @@
             <li><a href="#">New Arrivals</a></li>
             <li><a href="#">Sale</a></li>
           </ul>
-          <p class="products-filter-position">Sort by:<a href="#"> Default sorting</a></p>
+          <div class="filter-position">
+            <p class="products-filter-position">Sort by:<a href="#">Default sorting
+            <div class="arrow-down">
+                <svg class="arrow-down">
+                  <use href="icons/sprite.svg#arrow-down"></use>
+              </svg>
+            </div></a></p>
+          </div>
         </div>
      
         <div class="products-cards-position">
@@ -438,20 +464,22 @@
   </div>
 </div>
 <div class="location-item email">
+  <div><svg>
+    <use href="icons/sprite.svg#message">
+  
+    </use>
+  </svg></div>
  
-<p> <a href="mailto:contact@greenshop.com"> <svg>
-  <use href="icons/sprite.svg#message">
-
-  </use>
-</svg>contact@greenshop.com</a></p>
+<p> <a href="mailto:contact@greenshop.com"> contact@greenshop.com</a></p>
   </div>
   <div class="location-item phone">
-   
-     <p><a href="tel:+8801911717490"> <svg>
+    <div><svg>
       <use href="icons/sprite.svg#calling">
 
       </use>
-    </svg>+88 01911 717 490</a></p>
+    </svg> </div>
+   
+     <p><a href="tel:+8801911717490">+88 01911 717 490</a></p>
   </div>
 
   </div>
